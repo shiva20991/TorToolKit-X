@@ -373,7 +373,7 @@ async def check_link(msg, rclone=False, is_zip=False, extract=False, prev_msg=No
                     path.strip("-").strip()
                     path1 = path
                     rename_path = os.path.join(os.path.dirname(path), path1)
-                    os.rename(path, path1)
+                    os.rename(path,  rename_path)
                     path = rename_path
         
                 if re_name:
