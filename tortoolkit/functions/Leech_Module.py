@@ -368,13 +368,7 @@ async def check_link(msg, rclone=False, is_zip=False, extract=False, prev_msg=No
 
             if isinstance(dl_task, (ARTask, MegaDl)) and stat:
                 path = await dl_task.get_path()
-                if path.startswith('www'):
-                    path = ' '.join(path.split()[1:])
-                    path.strip("-").strip()
-                    path1 = path
-                    rename_path = os.path.join(os.path.dirname(path), path1)
-                    os.rename(path,  rename_path)
-                    path = rename_path
+               
         
                 if re_name:
                     try:
