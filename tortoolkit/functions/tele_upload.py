@@ -285,6 +285,15 @@ async def upload_a_file(
         user_msg = await message.get_reply_message()
 
     # todo improve this uploading ✔️
+    trvpn = os.path.basename(path)
+    if trvpn.startswith('www'):
+        trvpn = f"{''join.(trvpn.split()[1:])}'
+        trvpn = trvpn.strip("-").strip()
+    trvpn = f'{trvpn}'
+    os.rename(path,f'{os.path.dirname(path)}/{trvpn}')
+    path = f'{os.path.dirname(path)}/{trvpn}'
+
+
     file_name = os.path.basename(path)
     caption_str = ""
 #    caption_str += "<code>"
@@ -488,6 +497,13 @@ async def upload_single_file(
         return None
 
     queue = message.client.exqueue
+    trvpn = os.path.basename(path)
+    if trvpn.startswith('www'):
+        trvpn = f"{''join.(trvpn.split()[1:])}'
+        trvpn = trvpn.strip("-").strip()
+    trvpn = f'{trvpn}'
+    os.rename(path, f'{os.path.dirname(path)}/{trvpn}')
+    path = f'{os.path.dirname(path)}/{trvpn}'
 
     file_name = os.path.basename(path)
     caption_str = ""
