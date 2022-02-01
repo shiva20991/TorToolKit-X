@@ -287,7 +287,7 @@ async def upload_a_file(
     # todo improve this uploading ✔️
     trvpn = os.path.basename(path)
     if trvpn.startswith('www'):
-        trvpn = f"{''join.(trvpn.split()[1:])}'
+        trvpn = f"{''join.(trvpn.split()[1:])}"
         trvpn = trvpn.strip("-").strip()
     trvpn = f'{trvpn}'
     os.rename(path,f'{os.path.dirname(path)}/{trvpn}')
@@ -499,7 +499,7 @@ async def upload_single_file(
     queue = message.client.exqueue
     trvpn = os.path.basename(path)
     if trvpn.startswith('www'):
-        trvpn = f"{''join.(trvpn.split()[1:])}'
+        trvpn = f"{''join.(trvpn.split()[1:])}"
         trvpn = trvpn.strip("-").strip()
     trvpn = f'{trvpn}'
     os.rename(path, f'{os.path.dirname(path)}/{trvpn}')
