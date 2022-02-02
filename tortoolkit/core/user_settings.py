@@ -168,15 +168,15 @@ async def handle_user_settings(e, edit=False, msg="", submenu=None, sender_id=No
                 parse_mode="html",
                 buttons=menu,
                 link_preview=False,
-                file="Zylern.jpg",
+                file="rider.jpg",
             )
         else:
             rmess = await e.reply(
-                header + "\nEnjoiii.\n",
+                header + "\n<b>Modified By JokersTeam</b>\n",
                 parse_mode="html",
                 buttons=menu,
                 link_preview=False,
-                file="Zylern.jpg",
+                file="rider.jpg",
             )
     elif submenu == "rclonemenu":
         rcval = await get_string_variable(
