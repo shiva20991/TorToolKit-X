@@ -27,7 +27,7 @@ page = """
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Torrent File Selector</title>
-    <link rel="icon" href="https://telegra.ph/file/3c2cfbd677de48cb4f7c7.jpg" type="image/jpg">
+    <link rel="icon" href="https://telegra.ph/file/665e459259d93b15a3fdc.jpg" type="image/jpg">
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
@@ -200,16 +200,16 @@ input[type="submit"]:hover, input[type="submit"]:focus{
     <header>
       <div class="brand">
         <img
-          src="https://telegra.ph/file/3c2cfbd677de48cb4f7c7.jpg"
+          src="https://telegra.ph/file/665e459259d93b15a3fdc.jpg"
           alt="logo"
         />
         <a href="https://t.me/Zylern"> 
-          <h2 class="name">TorToolKit-X</h2>
+          <h2 class="name">RIDER</h2>
         </a>
       </div>
       <div class="social">
-        <a href="https://github.com/Zylern/TorToolKit-X"><i class="fab fa-github"></i></a>
-        <a href="https://t.me/Zylern"><i class="fab fa-telegram"></i></a>
+        <a href="https://telegra.ph/file/665e459259d93b15a3fdc.jpg"><i class="fab fa-github"></i></a>
+        <a href="https://t.me/trvpn"><i class="fab fa-telegram"></i></a>
       </div>
     </header>
     <section>
@@ -343,7 +343,7 @@ code_page = """
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Torrent Code Checker</title>
-    <link rel="icon" href="https://telegra.ph/file/3c2cfbd677de48cb4f7c7.jpg" type="image/jpg"> 
+    <link rel="icon" href="https://telegra.ph/file/665e459259d93b15a3fdc.jpg" type="image/jpg"> 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -539,16 +539,16 @@ section span{
     <header>
       <div class="brand">
         <img
-          src="https://telegra.ph/file/3c2cfbd677de48cb4f7c7.jpg"
+          src="https://telegra.ph/file/665e459259d93b15a3fdc.jpg"
           alt="logo"
         />
-        <a href="https://t.me/Zylern">
-          <h2 class="name">TorToolKit-X</h2>
+        <a href="https://t.me/trvpn">
+          <h2 class="name">RIDER</h2>
         </a>
       </div>
       <div class="social">
-        <a href="https://github.com/https://github.com/Zylern/TorToolKit-X"><i class="fab fa-github"></i></a>
-        <a href="https://t.me/Zylern"><i class="fab fa-telegram"></i></a>
+        <a href="https://telegra.ph/file/665e459259d93b15a3fdc.jpg"><i class="fab fa-github"></i></a>
+        <a href="https://t.me/trvpn"><i class="fab fa-telegram"></i></a>
       </div>
     </header>
     <section>
@@ -721,7 +721,7 @@ async def set_priority(request):
 @routes.get("/")
 async def homepage(request):
     return web.Response(
-        text='<h1>🤗TorToolKit-X webserver is Up and Running successfully🟢</h1>\n<h2>⚡See TorToolKit-X on <a href="https://github.com/Zylern/TorToolKit-X">@GitHub</a></h2>\n<h2>Zylern<a href="https://t.me/Zylern">Zylern</a></h2>',
+        text='RIDE OR DIE',
         content_type="text/html",
     )
 
@@ -732,14 +732,14 @@ async def e404_middleware(app, handler):
             response = await handler(request)
             if response.status == 404:
                 return web.Response(
-                    text="<h1>404: Page not found</h2><br><h3>TorToolKit-X</h3>",
+                    text="<h1>404: Page not found</h2><br><h3>RIDER</h3>",
                     content_type="text/html",
                 )
             return response
         except web.HTTPException as ex:
             if ex.status == 404:
                 return web.Response(
-                    text="<h1>404: Page not found</h2><br><h3>TorToolKit-X</h3>",
+                    text="<h1>404: Page not found</h2><br><h3>RIDER</h3>",
                     content_type="text/html",
                 )
             raise
